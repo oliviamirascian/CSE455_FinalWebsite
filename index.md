@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## CSE 455 Final Project Image Deblurring
 
 You can use the [editor on GitHub](https://github.com/oliviamirascian/CSE455_FinalWebsite/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
