@@ -104,22 +104,30 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 #### Learning Rate = 10^-4
  
 <div align="center">
+ 
 <figure>
+ 
   <img alt="gaussian_original" src="https://user-images.githubusercontent.com/39535587/157814687-1399ccc0-4245-47fa-9158-1a5bd500d3f0.jpg">
   <img alt="gaussian_greyscalel" src="https://user-images.githubusercontent.com/39535587/157814909-f4286106-7a24-4f7e-9f0f-712ee10933ab.jpg">
   <img alt="gaussian_blurred" src="https://user-images.githubusercontent.com/39535587/157814855-dac1a1c8-d395-4240-ab95-0dfb1962c8d7.jpg">
   
-  Original, Greyscaled, Blurred
  
 </figure>
+ 
+ <figure>
+  
+  Original, Greyscaled, Blurred
+  
+  </figure>
+ 
 </div>
 
 <div align="center">
 <figure>
- 
-![gaussian_deblurred19_model1](https://user-images.githubusercontent.com/39535587/157815393-15bf9e08-8872-4f19-9908-5e0b0517bbaa.jpg)
-![gaussian_deblurred19_model2](https://user-images.githubusercontent.com/39535587/157815403-5a1a1990-405a-40e4-8573-66871289e276.jpg)
-![gaussian_deblurred19_model3](https://user-images.githubusercontent.com/39535587/157815410-402b9482-c9f9-4ff5-9c8c-d3aa1704aef7.jpg)
+
+   <img alt="gaussian_deblurred19_model1" src="https://user-images.githubusercontent.com/39535587/157815393-15bf9e08-8872-4f19-9908-5e0b0517bbaa.jpg">
+  <img alt="gaussian_deblurred19_model2" src="https://user-images.githubusercontent.com/39535587/157815403-5a1a1990-405a-40e4-8573-66871289e276.jpg">
+  <img alt="gaussian_deblurred19_model3" src="https://user-images.githubusercontent.com/39535587/157815410-402b9482-c9f9-4ff5-9c8c-d3aa1704aef7.jpg">
 
  
 </figure>
@@ -133,25 +141,27 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 <div align="center">
 <figure>
  
-![gaussian2_original](https://user-images.githubusercontent.com/39535587/157814782-49854ba6-0368-440d-833d-c148f43b50c4.jpg)
-![gaussian2_greyscale](https://user-images.githubusercontent.com/39535587/157814945-79ff2507-2747-4191-917d-451678058b2f.jpg)
-![gaussian2_blurred](https://user-images.githubusercontent.com/39535587/157815283-e1d03d21-cc07-4a35-b75f-545580a91897.jpg)
-
-Original, Greyscaled, Blurred
+  <img alt="gaussian2_original" src="https://user-images.githubusercontent.com/39535587/157814782-49854ba6-0368-440d-833d-c148f43b50c4.jpg">
+  <img alt="gaussian2_greyscale" src="https://user-images.githubusercontent.com/39535587/157814945-79ff2507-2747-4191-917d-451678058b2f.jpg">
+  <img alt="gaussian2_blurred" src="https://user-images.githubusercontent.com/39535587/157815283-e1d03d21-cc07-4a35-b75f-545580a91897.jpg">
 
 </figure>
+ 
+ Original, Greyscaled, Blurred
+ 
 </div>
 
 <div align="center">
 <figure>
  
-![gaussian_deblurred19_model1](https://user-images.githubusercontent.com/39535587/157814996-4b656dcf-2847-42c3-961a-ffa1f21f8bcc.jpg)
-![gaussian_deblurred219_model2](https://user-images.githubusercontent.com/39535587/157815237-6ff701be-c55e-44c6-8693-5fdd647610ec.jpg)
-![gaussian_deblurred219_model3](https://user-images.githubusercontent.com/39535587/157815246-e457678a-d3be-4058-a805-ed44aa165065.jpg)
-
-Model 1, Model 2, Model 3
+  <img alt="gaussian2_original" src="https://user-images.githubusercontent.com/39535587/157814996-4b656dcf-2847-42c3-961a-ffa1f21f8bcc.jpg">
+  <img alt="gaussian2_greyscale" src="https://user-images.githubusercontent.com/39535587/157815237-6ff701be-c55e-44c6-8693-5fdd647610ec.jpg">
+  <img alt="gaussian2_blurred" src="https://user-images.githubusercontent.com/39535587/157815246-e457678a-d3be-4058-a805-ed44aa165065.jpg">
 
 </figure>
+ 
+ Model 1, Model 2, Model 3
+ 
 </div>
 
 ## Box Deblur Results
@@ -160,52 +170,57 @@ Model 1, Model 2, Model 3
 <div align="center">
 <figure>
  
-![box_filter_original](https://user-images.githubusercontent.com/39535587/157812715-19b7bca6-ab07-4fa0-ae4c-4795c2657b08.jpg)
-![box_filter_greyscaled](https://user-images.githubusercontent.com/39535587/157812466-1dca112a-eaa7-4e1f-bfd1-a11f9ee6b558.jpg)
-![box_filter_blurred](https://user-images.githubusercontent.com/39535587/157812327-5beb3374-8fab-4ed9-bf66-ed7de6dae4b0.jpg)
-
-Original, Greyscaled, Blurred
+  <img alt="box_filter_original" src="https://user-images.githubusercontent.com/39535587/157812715-19b7bca6-ab07-4fa0-ae4c-4795c2657b08.jpg">
+  <img alt="box_filter_greyscaled" src="https://user-images.githubusercontent.com/39535587/157812466-1dca112a-eaa7-4e1f-bfd1-a11f9ee6b558.jpg">
+  <img alt="box_filter_blurred" src="https://user-images.githubusercontent.com/39535587/157812327-5beb3374-8fab-4ed9-bf66-ed7de6dae4b0.jpg">
 
 </figure>
+ 
+ Original, Greyscaled, Blurred
+ 
 </div>
 
 
 <div align="center">
 <figure>
- 
-![box_filter_deblurred19_model1](https://user-images.githubusercontent.com/39535587/157813350-3f3a273e-8726-445c-85cb-e8cbc008b6b7.jpg)
-![box_filter_deblurred19_model2](https://user-images.githubusercontent.com/39535587/157813503-2266e469-7e3f-46af-bc10-e728cf583c83.jpg)
-![box_filter_deblurred19_model3](https://user-images.githubusercontent.com/39535587/157813515-1323c31c-1b2c-4312-b81b-a00c356ff219.jpg)
-
-Model 1, Model 2, Model 3
+  
+  <img alt="box_filter_deblurred19_model1" src="https://user-images.githubusercontent.com/39535587/157813350-3f3a273e-8726-445c-85cb-e8cbc008b6b7.jpg">
+  <img alt="box_filter_deblurred19_model2" src="https://user-images.githubusercontent.com/39535587/157813503-2266e469-7e3f-46af-bc10-e728cf583c83.jpg">
+  <img alt="box_filter_deblurred19_model3" src="https://user-images.githubusercontent.com/39535587/157813515-1323c31c-1b2c-4312-b81b-a00c356ff219.jpg">
 
 </figure>
+ 
+ Model 1, Model 2, Model 3
+ 
 </div>
 
 #### Learning Rate = 5 * 10^-5
 
 <div align="center">
 <figure>
-
-![box_filter2_original](https://user-images.githubusercontent.com/39535587/157814112-0e0fd5e4-18bc-4214-8d04-6899494da706.jpg)
-![box_filter2_greyscaled](https://user-images.githubusercontent.com/39535587/157813795-58d3ce86-bf26-4c39-8cae-1dd423a0249d.jpg)
-![box_filter2_blurred](https://user-images.githubusercontent.com/39535587/157813965-e52175ca-1bc3-474b-b944-fa513cd42b1b.jpg)
-
-Original, Greyscaled, Blurred
+ 
+  <img alt="box_filter2_original" src="https://user-images.githubusercontent.com/39535587/157814112-0e0fd5e4-18bc-4214-8d04-6899494da706.jpg">
+  <img alt="box_filter2_greyscaled" src="https://user-images.githubusercontent.com/39535587/157813795-58d3ce86-bf26-4c39-8cae-1dd423a0249d.jpg">
+  <img alt="box_filter2_blurred" src="https://user-images.githubusercontent.com/39535587/157813965-e52175ca-1bc3-474b-b944-fa513cd42b1b.jpg">
 
 </figure>
+ 
+ Original, Greyscaled, Blurred
+ 
 </div>
 
 <div align="center">
-<figure>
  
-![box_filter2_deblurred19_model1](https://user-images.githubusercontent.com/39535587/157813837-81cddc32-7279-4757-9c2f-82c056cf5f44.jpg)
-![box_filter2_deblurred19_model2](https://user-images.githubusercontent.com/39535587/157813858-8c608343-055d-474d-b33b-a16fcd2b4913.jpg)
-![box_filter2_deblurred19_model3](https://user-images.githubusercontent.com/39535587/157813870-775a3de9-07d7-4bb9-aa2a-35cf09adedf4.jpg)
+<figure>
 
-Model 1, Model 2, Model 3
+  <img alt="box_filter2_deblurred19_model1" src="https://user-images.githubusercontent.com/39535587/157813837-81cddc32-7279-4757-9c2f-82c056cf5f44.jpg">
+  <img alt="box_filter2_deblurred19_model2" src="https://user-images.githubusercontent.com/39535587/157813858-8c608343-055d-474d-b33b-a16fcd2b4913.jpg">
+  <img alt="box_filter2_deblurred19_model3" src="https://user-images.githubusercontent.com/39535587/157813870-775a3de9-07d7-4bb9-aa2a-35cf09adedf4.jpg">
  
 </figure>
+ 
+ Model 1, Model 2, Model 3
+ 
 </div>
 
 
@@ -213,28 +228,32 @@ Model 1, Model 2, Model 3
 #### Learning Rate = 10^-4
 
 <div align="center">
+ 
 <figure>
  
-![motion_original](https://user-images.githubusercontent.com/39535587/157815918-effc01cd-7ee2-488e-8186-7a9a3d25ace9.jpg)
-![motion_greyscale](https://user-images.githubusercontent.com/39535587/157815729-1151db82-f0b1-4530-8cf0-620c2a624bcf.jpg)
-![motion_blurred](https://user-images.githubusercontent.com/39535587/157815803-1c9d7457-ddac-4062-896e-ac84995a0f90.jpg)
-
-Original, Greyscaled, Blurred
+  <img alt="motion_original" src="https://user-images.githubusercontent.com/39535587/157815918-effc01cd-7ee2-488e-8186-7a9a3d25ace9.jpg">
+  <img alt="motion_greyscale" src="https://user-images.githubusercontent.com/39535587/157815729-1151db82-f0b1-4530-8cf0-620c2a624bcf.jpg">
+  <img alt="motion_blurred" src="https://user-images.githubusercontent.com/39535587/157815803-1c9d7457-ddac-4062-896e-ac84995a0f90.jpg">
 
 </figure>
+ 
+ Original, Greyscaled, Blurred
+ 
 </div>
 
 
 <div align="center">
+ 
 <figure>
  
-![motion_deblurred19_model1](https://user-images.githubusercontent.com/39535587/157815757-2eb78ad0-09f2-42ae-b598-75412d78dd09.jpg)
-![motion_deblurred19_model2](https://user-images.githubusercontent.com/39535587/157815779-b5f0ce6b-26d3-45ed-8130-2727649f7cbe.jpg)
-![motion_deblurred19_model3](https://user-images.githubusercontent.com/39535587/157815748-0fea1162-ed69-45b7-9fb5-52c8f3b0fe2a.jpg)
-
-Model 1, Model 2, Model 3
+  <img alt="motion_deblurred19_model1" src="https://user-images.githubusercontent.com/39535587/157815757-2eb78ad0-09f2-42ae-b598-75412d78dd09.jpg">
+  <img alt="motion_deblurred19_model2" src="https://user-images.githubusercontent.com/39535587/157815779-b5f0ce6b-26d3-45ed-8130-2727649f7cbe.jpg">
+  <img alt="motion_deblurred19_model3" src="https://user-images.githubusercontent.com/39535587/157815748-0fea1162-ed69-45b7-9fb5-52c8f3b0fe2a.jpg">
 
 </figure>
+ 
+ Model 1, Model 2, Model 3
+ 
 </div>
 
 #### Learning Rate = 5 * 10^-5
@@ -242,26 +261,27 @@ Model 1, Model 2, Model 3
 <div align="center">
 <figure>
  
-![motion2_original](https://user-images.githubusercontent.com/39535587/157815976-70f548c6-a339-4ec4-8e30-885b8c21f978.jpg)
-![motion2_greyscale](https://user-images.githubusercontent.com/39535587/157815605-97d310a8-0e2c-49c0-9aa2-9aa3075b1af8.jpg)
-![motion2_blurred](https://user-images.githubusercontent.com/39535587/157815738-66cfbf36-2560-4bd9-9f66-f99de63e10c2.jpg)
-
-Original, Greyscaled, Blurred
+  <img alt="motion2_original" src="https://user-images.githubusercontent.com/39535587/157815976-70f548c6-a339-4ec4-8e30-885b8c21f978.jpg">
+  <img alt="motion2_greyscale" src="https://user-images.githubusercontent.com/39535587/157815605-97d310a8-0e2c-49c0-9aa2-9aa3075b1af8.jpg">
+  <img alt="motion2_blurred" src="https://user-images.githubusercontent.com/39535587/157815738-66cfbf36-2560-4bd9-9f66-f99de63e10c2.jpg">
  
 </figure>
+ 
+ Original, Greyscaled, Blurred
+ 
 </div>
 
 <div align="center">
 <figure>
  
-![motion2_deblurred19_model1](https://user-images.githubusercontent.com/39535587/157815679-1aea413c-cc85-4dba-a8e9-8ce5689a2fa8.jpg)
-![motion2_deblurred19_model2](https://user-images.githubusercontent.com/39535587/157815663-00b476f4-24d2-4f25-a1a9-5424fdca9066.jpg)
-![motion2_deblurred19_model3](https://user-images.githubusercontent.com/39535587/157815658-d1e31c48-fd10-4adb-b97a-11e27da8544a.jpg)
-
-
-Model 1, Model 2, Model 3
+  <img alt="motion2_deblurred19_model1" src="https://user-images.githubusercontent.com/39535587/157815679-1aea413c-cc85-4dba-a8e9-8ce5689a2fa8.jpg">
+  <img alt="motion2_deblurred19_model2" src="https://user-images.githubusercontent.com/39535587/157815663-00b476f4-24d2-4f25-a1a9-5424fdca9066.jpg">
+  <img alt="motion2_deblurred19_model3" src="https://user-images.githubusercontent.com/39535587/157815658-d1e31c48-fd10-4adb-b97a-11e27da8544a.jpg">
 
 </figure>
+ 
+Model 1, Model 2, Model 3
+ 
 </div>
 
 ## Conclusion
