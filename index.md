@@ -135,9 +135,9 @@ The paper experiments with different hyper-parameter settings to improve perform
  
 <figure>
  
-  <img alt="gaussian_original" src="https://raw.githubusercontent.com/oliviamirascian/oliviamirascian.github.io/gh-pages/157814687-1399ccc0-4245-47fa-9158-1a5bd500d3f0.jpg">
-  <img alt="gaussian_greyscalel" src="https://raw.githubusercontent.com/oliviamirascian/oliviamirascian.github.io/gh-pages/157814909-f4286106-7a24-4f7e-9f0f-712ee10933ab.jpg">
-  <img alt="gaussian_blurred" src="https://raw.githubusercontent.com/oliviamirascian/oliviamirascian.github.io/gh-pages/157814855-dac1a1c8-d395-4240-ab95-0dfb1962c8d7.jpg">
+  <img alt="gaussian_original" src="https://raw.githubusercontent.com/oliviamirascian/oliviamirascian.github.io/gh-pages/157814687-1399ccc0-4245-47fa-9158-1a5bd500d3f0.png">
+  <img alt="gaussian_greyscalel" src="https://raw.githubusercontent.com/oliviamirascian/oliviamirascian.github.io/gh-pages/157814909-f4286106-7a24-4f7e-9f0f-712ee10933ab.png">
+  <img alt="gaussian_blurred" src="https://raw.githubusercontent.com/oliviamirascian/oliviamirascian.github.io/gh-pages/157814855-dac1a1c8-d395-4240-ab95-0dfb1962c8d7.png">
   
  
 </figure>
