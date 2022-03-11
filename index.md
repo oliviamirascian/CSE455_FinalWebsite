@@ -1,4 +1,4 @@
-# Image Deblurring using Deep Convolutional Neural Network
+# Anime Faces Deblurring using Deep Convolutional Neural Network
 ### CSE 455 Final Project by Minh Hoang and Olivia Mirascian
 Published on March 10, 2022
 
@@ -21,7 +21,7 @@ There are 3 layers to this original model with kernel size 9-1-5. Given a lower 
 <div align="center">
 <figure>
 
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/39535587/157801780-67732afb-3c28-4878-8592-63feb44bb51d.png"> 
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/39535587/157801780-67732afb-3c28-4878-8592-63feb44bb51d.png"> 
 
 </figure>
 </div>
