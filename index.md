@@ -134,7 +134,7 @@ The paper experiments with different hyper-parameter settings to improve perform
  
  <figure>
   
-  Original, Grayscaled, Blurred
+  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
   
   </figure>
  
@@ -150,7 +150,7 @@ The paper experiments with different hyper-parameter settings to improve perform
  
 </figure>
 
- Model 1, Model 2, Model 3
+ Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
  
 </div>
 
@@ -165,7 +165,7 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
- Original, Grayscaled, Blurred
+  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
  
 </div>
 
@@ -178,7 +178,7 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
- Model 1, Model 2, Model 3:
+ Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
  
 </div>
 
@@ -194,7 +194,7 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
- Original, Grayscaled, Blurred
+  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
  
 </div>
 
@@ -208,7 +208,7 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
- Model 1, Model 2, Model 3
+ Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
  
 </div>
 
@@ -223,7 +223,7 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
- Original, Grayscaled, Blurred
+  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
  
 </div>
 
@@ -237,7 +237,7 @@ The paper experiments with different hyper-parameter settings to improve perform
  
 </figure>
  
- Model 1, Model 2, Model 3
+ Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
  
 </div>
 
@@ -255,7 +255,7 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
- Original, Grayscaled, Blurred
+  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
  
 </div>
 
@@ -270,7 +270,7 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
- Model 1, Model 2, Model 3
+ Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
  
 </div>
 
@@ -285,7 +285,7 @@ The paper experiments with different hyper-parameter settings to improve perform
  
 </figure>
  
- Original, Grayscaled, Blurred
+  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
  
 </div>
 
@@ -298,7 +298,7 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
-Model 1, Model 2, Model 3
+ Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
  
 </div>
 
