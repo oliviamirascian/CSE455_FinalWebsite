@@ -19,25 +19,39 @@ There are 3 layers to this original model with kernel size 9-1-5. Given a lower 
 
 The paper experiments with different hyper-parameter settings to improve performance. We decided to do similarly and experiment with different depths, kernel size, and learning rates.
 
-## Experiment
+## Performance Plots
 For our three models, model 1 was our original model (kernel size 9-1-5), model 2 consisted of a larger kernel and 1 additional layer (9-3-1-5) and model 3 had a smaller kernel with 2 additional layers (9-1-1-1-5)
 
-We first experimented with a learning rate of 0.0001 and an epoch of 20 using all three models:
+We first experimented with a learning rate of 10^-4 and an epoch of 20 using all three models:
 
-### Model 1
-<img width="300" alt="box_filter_loss_model1" src="https://user-images.githubusercontent.com/39535587/157806246-c5490c52-b009-4798-9410-a184f6b00128.png"> <img width="300" alt="gaussian_loss_model1" src="https://user-images.githubusercontent.com/39535587/157806808-50ccc722-b3ea-4167-8ae3-153ddebe301a.png"> <img width="300" alt="motion_loss_model1" src="https://user-images.githubusercontent.com/39535587/157806878-b1805465-997c-47a6-a2c3-4b4a2c4ac3bb.png"> 
+### Box Filter Deblurring 
+#### Learning Rate = 10^-4
+<img width="500" alt="box_filter_loss_model1" src="https://user-images.githubusercontent.com/39535587/157806246-c5490c52-b009-4798-9410-a184f6b00128.png"> <img width="500" alt="box_filter_loss_model2" src="https://user-images.githubusercontent.com/39535587/157806701-814a8827-c7d0-44ca-80d0-09828c6c236c.png"> <img width="500" alt="box_filter_loss_model3" src="https://user-images.githubusercontent.com/39535587/157806714-1ba85c6e-607a-49ee-95d8-8d428fad3213.png">
+#### Learning Rate = 5 * 10^-5
+<img width="500" alt="box2_filter_loss_model1" src="https://user-images.githubusercontent.com/39535587/157810425-00cfc9ca-9543-4fd8-b6fb-36e7e18f7198.png">
+<img width="500" alt="box2_filter_loss_model2" src="https://user-images.githubusercontent.com/39535587/157810596-3244f063-6a49-4b4d-a86b-4f16c1625be2.png">
+<img width="500" alt="box2_filter_loss_model3" src="https://user-images.githubusercontent.com/39535587/157810687-3e6a2be6-df92-448b-a6e8-38d82956d351.png">
 
-### Model 2
-<img width="300" alt="box_filter_loss_model2" src="https://user-images.githubusercontent.com/39535587/157806701-814a8827-c7d0-44ca-80d0-09828c6c236c.png"> <img width="300" alt="gaussian_loss_model2" src="https://user-images.githubusercontent.com/39535587/157806889-9841f232-8879-41b1-9893-007543446661.png"> <img width="300" alt="motion_loss_model2" src="https://user-images.githubusercontent.com/39535587/157806971-114eea4f-084a-48a8-ad76-a4f04dfa7cda.png"> 
+Write analysis here
 
-### Model 3
-<img width="300" alt="box_filter_loss_model3" src="https://user-images.githubusercontent.com/39535587/157806714-1ba85c6e-607a-49ee-95d8-8d428fad3213.png"> <img width="300" alt="gaussian_loss_model3" src="https://user-images.githubusercontent.com/39535587/157806945-4d41604b-6b30-496b-b914-cccae08a3d93.png"> <img width="300" alt="motion_loss_model3" src="https://user-images.githubusercontent.com/39535587/157806907-93393c42-6066-41c1-aa95-633336590e49.png"> 
+### Gaussian Filter Deblurring 
+#### Learning Rate = 10^-4
+<img width="500" alt="gaussian_loss_model1" src="https://user-images.githubusercontent.com/39535587/157806808-50ccc722-b3ea-4167-8ae3-153ddebe301a.png"> <img width="500" alt="gaussian_loss_model2" src="https://user-images.githubusercontent.com/39535587/157806889-9841f232-8879-41b1-9893-007543446661.png"> <img width="500" alt="gaussian_loss_model3" src="https://user-images.githubusercontent.com/39535587/157806945-4d41604b-6b30-496b-b914-cccae08a3d93.png"> 
+#### Learning Rate = 5 * 10^-5
+<img width="500" alt="gaussian2_loss_model1" src="https://user-images.githubusercontent.com/39535587/157811236-1518234f-36b9-44fa-b56d-612ab230679d.png"> <img width="500" alt="gaussian2_loss_model2" src="https://user-images.githubusercontent.com/39535587/157811249-978719d1-4040-4150-a383-67ad19e65a01.png"> <img width="500" alt="gaussian2_loss_model3" src="https://user-images.githubusercontent.com/39535587/157811256-f4c69fe3-56a2-459d-a6a0-db629f9ac6db.png"> 
+
+Write analysis here
+
+### Motion Filter Deblurring 
+#### Learning Rate = 10^-4
+<img width="500" alt="motion_loss_model1" src="https://user-images.githubusercontent.com/39535587/157806878-b1805465-997c-47a6-a2c3-4b4a2c4ac3bb.png"> <img width="500" alt="motion_loss_model2" src="https://user-images.githubusercontent.com/39535587/157806971-114eea4f-084a-48a8-ad76-a4f04dfa7cda.png"> <img width="500" alt="motion_loss_model3" src="https://user-images.githubusercontent.com/39535587/157806907-93393c42-6066-41c1-aa95-633336590e49.png"> 
+#### Learning Rate = 5 * 10^-5
+<img width="500" alt="motion2_loss_model1" src="https://user-images.githubusercontent.com/39535587/157811396-99f3a6a6-504b-433d-b2f3-09f83713dc59.png"> <img width="500" alt="motion2_loss_model2" src="https://user-images.githubusercontent.com/39535587/157811407-d9defb76-7b83-4eaf-a970-d38e1c3fc2dd.png"> <img width="500" alt="motion2_loss_model3" src="https://user-images.githubusercontent.com/39535587/157811441-d6fe57b6-fa67-467e-96e6-0cf84650f6ba.png"> 
+
+Write analysis here
 
 
-
-
-
-
+## Results
 
 
 ## References
@@ -93,6 +107,7 @@ Syntax highlighted code block
 
 1. Numbered
 2. List
+![Uploading motion2_loss_model3.png…]()
 
 **Bold** and _Italic_ and `Code` text
 
