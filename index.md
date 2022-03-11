@@ -5,7 +5,7 @@ Published on March 10, 2022
 ## Abstract
 In this project, we explore image deblurring techniques and learning rates to unblur differently blurred animated images. To blur the images, we used three techniques: gaussian filter, box filter, and a custom made motion blurring filter. We then used three different deep convolutional neural network models with some different learning rates to train and compare the resulting images and loss. We discuss more of the takeaways of this project in this video summary here (make link).
 
-## Related Work
+## Related Works
 
 
 ## Problem and Inspiration
@@ -111,11 +111,11 @@ The paper experiments with different hyper-parameter settings to improve perform
 </div>
 
 ## Model Evaluation
-Learning Rate evaluation: Looking at the plots, we will notice that the average and overall validation losses of learning rate 10<sup>-4</sup> is much lower than those of learning rate 5 * 10<sup>-5</sup>. Moreover, the losses on the plots of learning rate 5 * 10<sup>-5</sup> appear to have converged as we increase our epochs, suggesting that we've correctly proved the claim in the paper that smaller learning rates do affect the convergence of the network.
+**Learning Rate evaluation:** Looking at the plots, we will notice that the average and overall validation losses of learning rate 10<sup>-4</sup> is much lower than those of learning rate 5 * 10<sup>-5</sup>. Moreover, the losses on the plots of learning rate 5 * 10<sup>-5</sup> appear to have converged as we increase our epochs, suggesting that we've correctly proved the claim in the paper that smaller learning rates do affect the convergence of the network.
 
-Model evaluation: For the same learning rate, we can look at the plots and see that Model 1 and Model 2 have close overall and average validation losses to each other, with one maybe slightly better than another in one blur filter but not in another, suggesting that they performed well. On the other hand, Model 3 performs worse, with much higher loss compared to the other two. This proved the claim in the paper that deeper structure does not always lead to better results.
+**Model evaluation:** For the same learning rate, we can look at the plots and see that Model 1 and Model 2 have close overall and average validation losses to each other, with one maybe slightly better than another in one blur filter but not in another, suggesting that they performed well. On the other hand, Model 3 performs worse, with much higher loss compared to the other two. This proved the claim in the paper that deeper structure does not always lead to better results.
 
-Blur Filter evaluation: For the same model and learning rate, the overall loss of Gaussian Deblurring and Box Filter Deblurring are quite close to each other. This suggests that our networks performed well in deblurring both Gaussian blurred images and Box Filter blurred images. However, the overall loss of Motion Deblurring is much higher than the other two, implying that our network structures may not be good enough to deblur Motion Blurring filter yet.
+**Blur Filter evaluation:** For the same model and learning rate, the overall loss of Gaussian Deblurring and Box Filter Deblurring are quite close to each other. This suggests that our networks performed well in deblurring both Gaussian blurred images and Box Filter blurred images. However, the overall loss of Motion Deblurring is much higher than the other two, implying that our network structures may not be good enough to deblur Motion Blurring filter yet.
 
 ## Output
 ### Gaussian Deblurring
@@ -134,7 +134,7 @@ Blur Filter evaluation: For the same model and learning rate, the overall loss o
  
  <figure>
   
-  Original, Greyscaled, Blurred
+  Original, Grayscaled, Blurred
   
   </figure>
  
@@ -165,7 +165,7 @@ Blur Filter evaluation: For the same model and learning rate, the overall loss o
 
 </figure>
  
- Original, Greyscaled, Blurred
+ Original, Grayscaled, Blurred
  
 </div>
 
@@ -194,7 +194,7 @@ Blur Filter evaluation: For the same model and learning rate, the overall loss o
 
 </figure>
  
- Original, Greyscaled, Blurred
+ Original, Grayscaled, Blurred
  
 </div>
 
@@ -223,7 +223,7 @@ Blur Filter evaluation: For the same model and learning rate, the overall loss o
 
 </figure>
  
- Original, Greyscaled, Blurred
+ Original, Grayscaled, Blurred
  
 </div>
 
@@ -255,7 +255,7 @@ Blur Filter evaluation: For the same model and learning rate, the overall loss o
 
 </figure>
  
- Original, Greyscaled, Blurred
+ Original, Grayscaled, Blurred
  
 </div>
 
@@ -285,7 +285,7 @@ Blur Filter evaluation: For the same model and learning rate, the overall loss o
  
 </figure>
  
- Original, Greyscaled, Blurred
+ Original, Grayscaled, Blurred
  
 </div>
 
@@ -303,11 +303,11 @@ Model 1, Model 2, Model 3
 </div>
 
 ## Output Comparison
-Learning Rate comparison: With different learning rates, a deblurring model may have significant differences in terms of output. For example, with learning rate 10<sup>-4</sup>, Model 3's output is significantly worse than that of learning rate 5 * 10<sup>-5</sup>. We can see that the former is very blurry and does not have much difference from the blurred image, while the latter achieves a significant amount of deblurring as compared to the blurred image. This once again proves that learning rate affects models' performances.
+**Learning Rate comparison:** With different learning rates, a deblurring model may have significant differences in terms of output. For example, with learning rate 10<sup>-4</sup>, Model 3's output is significantly worse than that of learning rate 5 * 10<sup>-5</sup>. We can see that the former is very blurry and does not have much difference from the blurred image, while the latter achieves a significant amount of deblurring as compared to the blurred image. This once again proves that learning rate affects models' performances.
 
-Model comparison: Overall, the outputs of Model 1 and Model 2 are quite similar, with slight differences due to their differences in loss as shown in the plot. However, Model 3's results are not as good as the others, especially for Gaussian Deblurring and Motion Deblurring. The outputs strengthen the claim that a model's depth is not a guarantee of better results. One more thing to notice is that, the output of Model 2 in Motion Deblurring is significantly better than the other two, as it looks much clearlt and closer to the grayscaled original image, despite not having much lower loss than the others. These outputs help us to conclude that another claim of the paper is also correct: A larger kernel filter size leads to better results.
+**Model comparison:** Overall, the outputs of Model 1 and Model 2 are quite similar, but Model 2's results are slightly better if we look closely. However, Model 3's results are not as good as the others, especially for Gaussian Deblurring and Motion Deblurring. The outputs strengthen the claim that a model's depth is not a guarantee of better results. One more thing to notice is that, the output of Model 2 in Motion Deblurring is significantly better than the other two, as it looks much clearlt and closer to the grayscaled original image, despite not having much lower loss than the others. These outputs help us to conclude that another claim of the paper is also correct: A larger kernel filter size leads to better results.
 
-Blur Filter Comparison: Box Filter Deblurring achieves the most satisfactory outputs, with most models result in significantly deblurred and close to grayscaled original images. The outputs also seems to work well with Gaussian Deblurring although it is essential to do hyper-parameter tuning to achieve good results. However, the outputs of Motion Deblurring are not too well, as they are still very blurry. Even Model 2's results are still blurry, they are just much less compared to the other two. This suggests that our models are not the suitable ones to deblur Motion blurred images yet, and we may need to consider different approaches, such as Autoencoders, GANs and much more complex Deep CNNs should we continue extending our project.
+**Blur Filter Comparison:** Box Filter Deblurring achieves the most satisfactory outputs, with most models result in significantly deblurred and close to grayscaled original images. The outputs also seems to work well with Gaussian Deblurring although it is essential to do hyper-parameter tuning to achieve good results. However, the outputs of Motion Deblurring are not too well, as they are still very blurry. Even Model 2's results are still blurry, they are just much less compared to the other two. This suggests that our models are not the suitable ones to deblur Motion blurred images yet, and we may need to consider different approaches, such as Autoencoders, GANs and much more complex Deep CNNs should we continue extending our project.
 
 ## Conclusion and Future Works
  
