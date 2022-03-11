@@ -14,7 +14,17 @@ Clear images are important to capture important moments or to record information
 ## Dataset and Pre-processing
 We used a Kaggle dataset consisting of 92,219 256x256 images of anime character faces without any metadata. For training time purpose, we decided to reduce down the size and use 1,000 images from that dataset in our project. We also learned  that the models used in the paper didn't work too well with colored images so we decided to apply grayscale filter to our images before blurring and training. The dataset doesn't have any specific intended use but we decided to use it since it was consistent in size and content allowing us to extract important information from our deblurring technique. The dataset is available here (insert link)
 
-(insert a few images of the dataset)
+<div align="center">
+<figure>
+
+ <img alt="sample1" src="https://user-images.githubusercontent.com/39535587/157968360-4547c5ec-358f-4877-acfc-a84f209d23bb.jpg"> 
+ <img alt="sample2" src="https://user-images.githubusercontent.com/39535587/157968463-42947e2b-afd8-4857-b909-6cfadae8ec39.jpg">
+ <img alt="sample3" src="https://user-images.githubusercontent.com/39535587/157968979-1d474ade-c196-43cb-ac7c-a039e37334d6.jpg">
+ 
+</figure>
+</div>
+
+
 
 ## Model Selection: SRCNN Model
 For our model selection, we used the deep convolutional neural network model proposed in the paper, which is called SRCNN (super-resolution deep convolutional neural network). 
@@ -310,6 +320,7 @@ The paper experiments with different hyper-parameter settings to improve perform
 **Blur Filter Comparison:** Box Filter Deblurring achieves the most satisfactory outputs, with most models result in significantly deblurred and close to grayscaled original images. The outputs also seems to work well with Gaussian Deblurring although it is essential to do hyper-parameter tuning to achieve good results. However, the outputs of Motion Deblurring are not too well, as they are still very blurry. Even Model 2's results are still blurry, they are just much less compared to the other two. This suggests that our models are not the suitable ones to deblur Motion blurred images yet, and we may need to consider different approaches, such as Autoencoders, GANs and much more complex Deep CNNs should we continue extending our project.
 
 ## Conclusion and Future Works
+During this project, as we explored the various altered SRCNN models we learned and gained experience on working with different Deep Convolutional Neural Network in Pytorch. Future work may include training a larger data set with a higher epoch to train the data for longer and compare the performance. We could also extend this project by adjusting the training and testing to be suitable on colored images
  
 ## References
 1. C. Dong, C. C. Loy, K. He and X. Tang, "Image Super-Resolution Using Deep Convolutional Networks," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 38, no. 2, pp. 295-307, 1 Feb. 2016, doi: 10.1109/TPAMI.2015.2439281.
