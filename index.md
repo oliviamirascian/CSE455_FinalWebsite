@@ -128,17 +128,23 @@ The paper experiments with different hyper-parameter settings to improve perform
 **Blur Filter evaluation:** For the same model and learning rate, the overall loss of Gaussian Deblurring and Box Filter Deblurring are quite close to each other. This suggests that our networks performed well in deblurring both Gaussian blurred images and Box Filter blurred images. However, the overall loss of Motion Deblurring is much higher than the other two, implying that our network structures may not be good enough to deblur Motion Blurring filter yet.
 
 ## Output
+The outputs are sorted in this order for each section (left to right, downwards):
+* Original image
+* Grayscaled image
+* Blurred image
+* Model 1 deblurred image
+* Model 2 deblurred image
+* Model 3 deblurred image
+
 ### Gaussian Deblurring
 #### Learning Rate = 10<sup>-4</sup>:
  
 <div align="center">
- 
 <figure>
  
-  <img alt="gaussian_original" src="https://raw.githubusercontent.com/oliviamirascian/oliviamirascian.github.io/gh-pages/editted/157814687-1399ccc0-4245-47fa-9158-1a5bd500d3f0.png">
-  <img alt="gaussian_greyscalel" src="https://raw.githubusercontent.com/oliviamirascian/oliviamirascian.github.io/gh-pages/editted/157814909-f4286106-7a24-4f7e-9f0f-712ee10933ab.png">
-  <img alt="gaussian_blurred" src="https://raw.githubusercontent.com/oliviamirascian/oliviamirascian.github.io/gh-pages/editted/157814855-dac1a1c8-d395-4240-ab95-0dfb1962c8d7.png">
-  
+  <img alt="gaussian_original" src="https://user-images.githubusercontent.com/39535587/157814687-1399ccc0-4245-47fa-9158-1a5bd500d3f0.jpg">
+  <img alt="gaussian_greyscalel" src="https://user-images.githubusercontent.com/39535587/157814909-f4286106-7a24-4f7e-9f0f-712ee10933ab.jpg">
+  <img alt="gaussian_blurred" src="https://user-images.githubusercontent.com/39535587/157814855-dac1a1c8-d395-4240-ab95-0dfb1962c8d7.jpg">
  
 </figure>
  
@@ -150,11 +156,8 @@ The paper experiments with different hyper-parameter settings to improve perform
    <img alt="gaussian_deblurred19_model1" src="https://user-images.githubusercontent.com/39535587/157815393-15bf9e08-8872-4f19-9908-5e0b0517bbaa.jpg">
   <img alt="gaussian_deblurred19_model2" src="https://user-images.githubusercontent.com/39535587/157815403-5a1a1990-405a-40e4-8573-66871289e276.jpg">
   <img alt="gaussian_deblurred19_model3" src="https://user-images.githubusercontent.com/39535587/157815410-402b9482-c9f9-4ff5-9c8c-d3aa1704aef7.jpg">
-
  
 </figure>
-
- Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
  
 </div>
 
@@ -169,8 +172,6 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
-  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
- 
 </div>
 
 <div align="center">
@@ -181,8 +182,6 @@ The paper experiments with different hyper-parameter settings to improve perform
   <img alt="gaussian2_blurred" src="https://user-images.githubusercontent.com/39535587/157815246-e457678a-d3be-4058-a805-ed44aa165065.jpg">
 
 </figure>
- 
- Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
  
 </div>
 
@@ -198,8 +197,6 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
-  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
- 
 </div>
 
 
@@ -211,8 +208,6 @@ The paper experiments with different hyper-parameter settings to improve perform
   <img alt="box_filter_deblurred19_model3" src="https://user-images.githubusercontent.com/39535587/157813515-1323c31c-1b2c-4312-b81b-a00c356ff219.jpg">
 
 </figure>
- 
- Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
  
 </div>
 
@@ -227,8 +222,6 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
-  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
- 
 </div>
 
 <div align="center">
@@ -240,8 +233,6 @@ The paper experiments with different hyper-parameter settings to improve perform
   <img alt="box_filter2_deblurred19_model3" src="https://user-images.githubusercontent.com/39535587/157813870-775a3de9-07d7-4bb9-aa2a-35cf09adedf4.jpg">
  
 </figure>
- 
- Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
  
 </div>
 
@@ -259,8 +250,6 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
-  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
- 
 </div>
 
 
@@ -274,8 +263,6 @@ The paper experiments with different hyper-parameter settings to improve perform
 
 </figure>
  
- Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
- 
 </div>
 
 #### Learning Rate = 5 * 10<sup>-5</sup>:
@@ -288,9 +275,7 @@ The paper experiments with different hyper-parameter settings to improve perform
   <img alt="motion2_blurred" src="https://user-images.githubusercontent.com/39535587/157815738-66cfbf36-2560-4bd9-9f66-f99de63e10c2.jpg">
  
 </figure>
- 
-  Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Grayscaled&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Blurred
- 
+
 </div>
 
 <div align="center">
@@ -301,9 +286,7 @@ The paper experiments with different hyper-parameter settings to improve perform
   <img alt="motion2_deblurred19_model3" src="https://user-images.githubusercontent.com/39535587/157815658-d1e31c48-fd10-4adb-b97a-11e27da8544a.jpg">
 
 </figure>
- 
- Model 1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Model 3
- 
+
 </div>
 
 ## Output Comparison
