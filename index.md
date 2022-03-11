@@ -102,10 +102,9 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
  
 <div align="center">
 <figure>
-  
-  ![gaussian_original](https://user-images.githubusercontent.com/39535587/157814687-1399ccc0-4245-47fa-9158-1a5bd500d3f0.jpg)
-  ![gaussian_greyscalel](https://user-images.githubusercontent.com/39535587/157814909-f4286106-7a24-4f7e-9f0f-712ee10933ab.jpg)
-  ![gaussian_blurred](https://user-images.githubusercontent.com/39535587/157814855-dac1a1c8-d395-4240-ab95-0dfb1962c8d7.jpg)
+  <img alt="gaussian_original" src="https://user-images.githubusercontent.com/39535587/157814687-1399ccc0-4245-47fa-9158-1a5bd500d3f0.jpg">
+  <img alt="gaussian_greyscalel" src="https://user-images.githubusercontent.com/39535587/157814909-f4286106-7a24-4f7e-9f0f-712ee10933ab.jpg">
+  <img alt="gaussian_blurred" src="https://user-images.githubusercontent.com/39535587/157814855-dac1a1c8-d395-4240-ab95-0dfb1962c8d7.jpg">
   
   Original, Greyscaled, Blurred
  
