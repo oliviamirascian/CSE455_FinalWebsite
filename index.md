@@ -5,6 +5,9 @@ Published on March 10, 2022
 ## Abstract
 In this project, we explore image deblurring techniques and learning rates to unblur differently blurred animated images. To blur the images, we used three techniques: gaussian filter, box filter, and a custom made motion blurring filter. We then used three different convolutional neural network models and two different learning rates to train and compare the resulting images and loss. We discuss more of the takeaways of this project in this video summary here (make link).
 
+## Related Work
+
+
 ## Problem and Motivation
 Clear images are important to capture important moments or to record information, although sometimes the images we capture or download result in being blurrier than we imagined. So for our project, we decided to focus on deblurring images that have been blurred in different ways and identify which models and learning rates are most suitable for different types of blurred images. 
 
@@ -259,6 +262,10 @@ Model 1, Model 2, Model 3
 </figure>
 </div>
 
+## Conclusion
 
+ 
 ## References
 1. Chao Dong, Chen Change Loy, Kaiming He, and Xiaoou Tang. (2014) Learning a Deep Convolutional Network for Image Super-Resolution http://personal.ie.cuhk.edu.hk/~ccloy/files/eccv_2014_deepresolution.pdf
+
+2. 
