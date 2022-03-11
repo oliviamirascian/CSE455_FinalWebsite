@@ -1,22 +1,28 @@
 # Anime Faces Deblurring using Deep Convolutional Neural Network
-### CSE 455 Final Project by Minh Hoang and Olivia Mirascian
+### Minh Hoang, Olivia Mirascian
 Published on March 10, 2022
 
 ## Abstract
-In this project, we explore image deblurring techniques and learning rates to unblur differently blurred animated images. To blur the images, we used three techniques: gaussian filter, box filter, and a custom made motion blurring filter. We then used three different convolutional neural network models and two different learning rates to train and compare the resulting images and loss. We discuss more of the takeaways of this project in this video summary here (make link).
+In this project, we explore image deblurring techniques and learning rates to unblur differently blurred animated images. To blur the images, we used three techniques: gaussian filter, box filter, and a custom made motion blurring filter. We then used three different deep convolutional neural network models with some different learning rates to train and compare the resulting images and loss. We discuss more of the takeaways of this project in this video summary here (make link).
 
 ## Related Work
 
 
-## Problem and Motivation
-Clear images are important to capture important moments or to record information, although sometimes the images we capture or download result in being blurrier than we imagined. So for our project, we decided to focus on deblurring images that have been blurred in different ways and identify which models and learning rates are most suitable for different types of blurred images. 
+## Problem and Inspiration
+Clear images are important to capture important moments or to record information, although sometimes the images we capture or download result in being blurrier than we imagined. In low-level Computer Vision, we've learned different methods to blur a clear image, as well as different blurring filters. Moving on to higher-level Computer Vision, we were introduced with more complex techniques and models that excel in multiple tasks such as object detection, semantic segmentation, image classification,... We were particularly interested GANs (Generative Adversarial Networks) and one of its applications, which is Image Super-Resolution. So for our project, we decided to reimplement Dong et al.'s paper (link) on Image Super-Resolution using PyTorch on a slightly simpler tasks: Deblurring images that have been blurred in different ways and identify which models and learning rates are most suitable for different types of blurred images. 
 
-## Dataset
-We used a kaggle dataset consisting of 92,000 256x256 images of anime character faces without any metadata. We decided to reduce down the size and use 1,000 images from that dataset in our project. We also learned that the models used for deblurring images currently don't work well with colored images so we decided to apply grayscale filter to our images before blurring and training. The dataset is available here (insert link). The dataset doesn't have any specific intended use but we decided to use it since it was consistent in size and content allowing us to extract important information from our deblurring technique. 
+## Dataset and Pre-processing
+We used a Kaggle dataset consisting of 92,219 256x256 images of anime character faces without any metadata. For training time purpose, we decided to reduce down the size and use 1,000 images from that dataset in our project. We also learned  that the models used in the paper didn't work too well with colored images so we decided to apply grayscale filter to our images before blurring and training. The dataset doesn't have any specific intended use but we decided to use it since it was consistent in size and content allowing us to extract important information from our deblurring technique. The dataset is available here (insert link)
 
-## The SRCNN Model
-For our model, we used a deep convolutional neural network called SRCNN (super-resolution deep convolutional neural network). 
-There are 3 layers to this original model with kernel size 9-1-5. Given a lower resolution image (our blurred image), the first convolutional layer use patch extraction and extracts a set of feature maps, the second layer nonlinearly maps those feature maps to higher resolution patches and the last layer is the reconstruction layer.
+(insert a few images of the dataset)
+
+## Model Selection: SRCNN Model
+For our model selection, we used the deep convolutional neural network model proposed in the paper, which is called SRCNN (super-resolution deep convolutional neural network). 
+There are 3 layers to this original model with kernel size 9-1-5. Given a lower resolution image (our blurred image), the first convolutional layer use patch extraction and extracts a set of feature maps, the second layer nonlinearly maps those feature maps to higher resolution patches and the last layer is the reconstruction layer. The paper also proposed alternative versions of the original SRCNN model with an increase in the number of layers, the kernel filter size of the hidden layers or the initial kernel filter size. We decided to use an addition of 2 more modified SRCNN models, one with one additional layer and an increase in the kernel filter size of the first hidden layer (9-3-1-5), and one with 2 additional layers (9-1-1-1-5).
+For simplicity, we will name our models in the following way:
+* Model 1: SRCNN (9-1-5) (Original model)
+* Model 2: SRCNN (9-3-1-5) (1 additional layer, increased kernel filter size)
+* Model 3: SRCNN (9-1-1-1-5) (2 additional layers)
 
 <div align="center">
 <figure>
@@ -26,13 +32,11 @@ There are 3 layers to this original model with kernel size 9-1-5. Given a lower 
 </figure>
 </div>
 
-The paper experiments with different hyper-parameter settings to improve performance. We decided to do similarly and experiment with different depths, kernel size, and learning rates.
-
-## Performance Plots
-For our three models, model 1 was our original model (kernel size 9-1-5), model 2 consisted of a larger kernel and 1 additional layer (9-3-1-5) and model 3 had a smaller kernel with 2 additional layers (9-1-1-1-5)
+## Model Performance
+The paper experiments with different hyper-parameter settings to improve performance. We decided to do similarly. The paper suggested that using a smaller learning rate in the last layer is essential for the network to converge, so we decided to use 2 different learning rates: 10<sup>-4</sup> and 5 * 10<sup>-5</sup> to compare the performances.
 
 ### Gaussian Filter Deblurring 
-#### Learning Rate = 10<sup>-4<sup>
+#### Learning Rate = 10<sup>-4</sup>:
 
 <div align="center">
 <figure>
@@ -44,7 +48,7 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 </figure>
 </div>
  
-#### Learning Rate = 5 * 10<sup>-5<sup>
+#### Learning Rate = 5 * 10<sup>-5</sup>:
 
 <div align="center">
 <figure>
@@ -57,7 +61,7 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 </div>
  
 ### Box Filter Deblurring 
-#### Learning Rate = 10<sup>-4<sup>
+#### Learning Rate = 10<sup>-4</sup>:
 
 <div align="center">
 <figure>
@@ -69,7 +73,7 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 </figure>
 </div>
  
-#### Learning Rate = 5 * 10<sup>-5<sup>
+#### Learning Rate = 5 * 10<sup>-5</sup>:
 
 <div align="center">
 <figure>
@@ -82,7 +86,7 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 </div>
 
 ### Motion Filter Deblurring 
-#### Learning Rate = 10<sup>-4<sup>
+#### Learning Rate = 10<sup>-4</sup>:
 
 <div align="center">
 <figure>
@@ -94,7 +98,7 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 </figure>
 </div>
  
-#### Learning Rate = 5 * 10<sup>-5<sup> 
+#### Learning Rate = 5 * 10<sup>-5</sup>:
  
 <div align="center">
 <figure>
@@ -106,8 +110,16 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 </figure>
 </div>
 
-## Gaussian Blur Results
-#### Learning Rate = 10^-4
+## Model Evaluation
+Learning Rate evaluation: Looking at the plots, we will notice that the average and overall validation losses of learning rate 10<sup>-4</sup> is much lower than those of learning rate 5 * 10<sup>-5</sup>. Moreover, the losses on the plots of learning rate 5 * 10<sup>-5</sup> appear to have converged as we increase our epochs, suggesting that we've correctly proved the claim in the paper that smaller learning rates do affect the convergence of the network.
+
+Model evaluation: For the same learning rate, we can look at the plots and see that Model 1 and Model 2 have close overall and average validation losses to each other, with one maybe slightly better than another in one blur filter but not in another, suggesting that they performed well. On the other hand, Model 3 performs worse, with much higher loss compared to the other two. This proved the claim in the paper that deeper structure does not always lead to better results.
+
+Blur Filter evaluation: For the same model and learning rate, the overall loss of Gaussian Deblurring and Box Filter Deblurring are quite close to each other. This suggests that our networks performed well in deblurring both Gaussian blurred images and Box Filter blurred images. However, the overall loss of Motion Deblurring is much higher than the other two, implying that our network structures may not be good enough to deblur Motion Blurring filter yet.
+
+## Output
+### Gaussian Deblurring
+#### Learning Rate = 10<sup>-4</sup>:
  
 <div align="center">
  
@@ -142,7 +154,7 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
  
 </div>
 
-#### Learning Rate = 5 * 10^-5
+#### Learning Rate = 5 * 10<sup>-5</sup>:
 
 <div align="center">
 <figure>
@@ -166,12 +178,12 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 
 </figure>
  
- Model 1, Model 2, Model 3
+ Model 1, Model 2, Model 3:
  
 </div>
 
-## Box Deblur Results
-#### Learning Rate = 10^-4
+### Box Filter Deblurring
+#### Learning Rate = 10<sup>-4</sup>:
 
 <div align="center">
 <figure>
@@ -200,7 +212,7 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
  
 </div>
 
-#### Learning Rate = 5 * 10^-5
+#### Learning Rate = 5 * 10<sup>-5</sup>:
 
 <div align="center">
 <figure>
@@ -230,8 +242,8 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 </div>
 
 
-## Motion Deblur Results
-#### Learning Rate = 10^-4
+### Motion Deblurring
+#### Learning Rate = 10<sup>-4</sup>:
 
 <div align="center">
  
@@ -262,7 +274,7 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
  
 </div>
 
-#### Learning Rate = 5 * 10^-5
+#### Learning Rate = 5 * 10<sup>-5</sup>:
 
 <div align="center">
 <figure>
@@ -290,10 +302,16 @@ Model 1, Model 2, Model 3
  
 </div>
 
-## Conclusion
+## Output Comparison
+Learning Rate comparison: With different learning rates, a deblurring model may have significant differences in terms of output. For example, with learning rate 10<sup>-4</sup>, Model 3's output is significantly worse than that of learning rate 5 * 10<sup>-5</sup>. We can see that the former is very blurry and does not have much difference from the blurred image, while the latter achieves a significant amount of deblurring as compared to the blurred image. This once again proves that learning rate affects models' performances.
 
+Model comparison: Overall, the outputs of Model 1 and Model 2 are quite similar, with slight differences due to their differences in loss as shown in the plot. However, Model 3's results are not as good as the others, especially for Gaussian Deblurring and Motion Deblurring. The outputs strengthen the claim that a model's depth is not a guarantee of better results. One more thing to notice is that, the output of Model 2 in Motion Deblurring is significantly better than the other two, as it looks much clearlt and closer to the grayscaled original image, despite not having much lower loss than the others. These outputs help us to conclude that another claim of the paper is also correct: A larger kernel filter size leads to better results.
+
+Blur Filter Comparison: Box Filter Deblurring achieves the most satisfactory outputs, with most models result in significantly deblurred and close to grayscaled original images. The outputs also seems to work well with Gaussian Deblurring although it is essential to do hyper-parameter tuning to achieve good results. However, the outputs of Motion Deblurring are not too well, as they are still very blurry. Even Model 2's results are still blurry, they are just much less compared to the other two. This suggests that our models are not the suitable ones to deblur Motion blurred images yet, and we may need to consider different approaches, such as Autoencoders, GANs and much more complex Deep CNNs should we continue extending our project.
+
+## Conclusion and Future Works
  
 ## References
-1. Chao Dong, Chen Change Loy, Kaiming He, and Xiaoou Tang. (2014) Learning a Deep Convolutional Network for Image Super-Resolution http://personal.ie.cuhk.edu.hk/~ccloy/files/eccv_2014_deepresolution.pdf
+1. C. Dong, C. C. Loy, K. He and X. Tang, "Image Super-Resolution Using Deep Convolutional Networks," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 38, no. 2, pp. 295-307, 1 Feb. 2016, doi: 10.1109/TPAMI.2015.2439281.
 
 2. 
