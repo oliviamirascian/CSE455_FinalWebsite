@@ -120,10 +120,12 @@ For our three models, model 1 was our original model (kernel size 9-1-5), model 
 ![gaussian_deblurred19_model1](https://user-images.githubusercontent.com/39535587/157815393-15bf9e08-8872-4f19-9908-5e0b0517bbaa.jpg)
 ![gaussian_deblurred19_model2](https://user-images.githubusercontent.com/39535587/157815403-5a1a1990-405a-40e4-8573-66871289e276.jpg)
 ![gaussian_deblurred19_model3](https://user-images.githubusercontent.com/39535587/157815410-402b9482-c9f9-4ff5-9c8c-d3aa1704aef7.jpg)
- 
-Model 1, Model 2, Model 3
+
  
 </figure>
+
+ Model 1, Model 2, Model 3
+ 
 </div>
 
 #### Learning Rate = 5 * 10^-5
