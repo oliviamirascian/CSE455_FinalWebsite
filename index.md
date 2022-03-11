@@ -18,7 +18,13 @@ We used a kaggle dataset consisting of 92,000 256x256 images of anime character 
 For our model, we used a deep convolutional neural network called SRCNN (super-resolution deep convolutional neural network). 
 There are 3 layers to this original model with kernel size 9-1-5. Given a lower resolution image (our blurred image), the first convolutional layer use patch extraction and extracts a set of feature maps, the second layer nonlinearly maps those feature maps to higher resolution patches and the last layer is the reconstruction layer.
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/39535587/157801780-67732afb-3c28-4878-8592-63feb44bb51d.png"> 
+<div align="center">
+<figure>
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/39535587/157801780-67732afb-3c28-4878-8592-63feb44bb51d.png"> 
+
+</figure>
+</div>
 
 The paper experiments with different hyper-parameter settings to improve performance. We decided to do similarly and experiment with different depths, kernel size, and learning rates.
 
