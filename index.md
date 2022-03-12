@@ -1,7 +1,7 @@
 <div align="center">
 <figure>
 
- <h1> Deblurring Anime Faces using Deep Convolutional Neural Network </h1>
+ <h1> <b>Deblurring Anime Faces using Deep Convolutional Neural Network </b> </h1>
  <h3> Minh Hoang, Olivia Mirascian </h3>
  
  </figure>
@@ -13,7 +13,7 @@
  
 </div>
 
-## Abstract
+## <b> Abstract </b>
 In this project, we explore image deblurring techniques and learning rates to unblur differently blurred animated images. To blur the images, we used three techniques: gaussian filter, box filter, and a custom made motion blurring filter. We then used three different deep convolutional neural network models with some different learning rates to train and compare the resulting images and loss. We discuss more of the takeaways of this project in this video summary here (make link).
 
 ## Introduction
