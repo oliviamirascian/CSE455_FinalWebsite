@@ -63,7 +63,7 @@ As we train our models, we will try to prove some claims that were made in the p
 
 Performance overview: Model 1 takes about 18s to run 1 poch, Model 2 takes about 28s to run 1 epoch and Model 3 takes about 22s to run 1 epoch. We can see that the larger the kernel filter size is, the longer it takes to train our model.
 
-### <b> Gaussian Filter Deblurring </b>
+### <b> Gaussian Deblurring </b>
 #### Learning Rate = 10<sup>-4</sup>:
 
 <div align="center">
@@ -113,7 +113,7 @@ Performance overview: Model 1 takes about 18s to run 1 poch, Model 2 takes about
 </figure>
 </div>
 
-### <b> Motion Filter Deblurring </b>
+### <b> Motion Deblurring </b>
 #### Learning Rate = 10<sup>-4</sup>:
 
 <div align="center">
