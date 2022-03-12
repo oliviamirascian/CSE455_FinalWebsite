@@ -52,6 +52,7 @@ For simplicity, we will name our models in the following way:
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/39535587/157801780-67732afb-3c28-4878-8592-63feb44bb51d.png"> 
  
  <em> An overview of the structure of the SRCNN model </em>
+ 
 </figure>
 </div>
 
