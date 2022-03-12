@@ -1,8 +1,8 @@
 <div align="center">
 <figure>
- 
- # Anime Faces Deblurring using Deep Convolutional Neural Network
- ### Minh Hoang, Olivia Mirascian
+
+ <h1> Deblurring Anime Faces using Deep Convolutional Neural Network </h1>
+ <h3> Minh Hoang, Olivia Mirascian </h3>
  
  </figure>
  </div>
