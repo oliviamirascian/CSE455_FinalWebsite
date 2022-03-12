@@ -69,8 +69,8 @@ Performance overview: Model 1 takes about 18s to run 1 poch, Model 2 takes about
 <div align="center">
 <figure>
  
-<img width="500" alt="gaussian_loss_model1" src="https://user-images.githubusercontent.com/39535587/157806808-50ccc722-b3ea-4167-8ae3-153ddebe301a.png">
-<img width="500" alt="gaussian_loss_model2" src="https://user-images.githubusercontent.com/39535587/157806889-9841f232-8879-41b1-9893-007543446661.png"> 
+<img width="450" alt="gaussian_loss_model1" src="https://user-images.githubusercontent.com/39535587/157806808-50ccc722-b3ea-4167-8ae3-153ddebe301a.png">
+<img width="450" alt="gaussian_loss_model2" src="https://user-images.githubusercontent.com/39535587/157806889-9841f232-8879-41b1-9893-007543446661.png"> 
 <img width="500" alt="gaussian_loss_model3" src="https://user-images.githubusercontent.com/39535587/157806945-4d41604b-6b30-496b-b914-cccae08a3d93.png"> 
 
 </figure>
@@ -312,7 +312,7 @@ The outputs are sorted in this order for each section (left to right, downwards)
  
 <ins>**Learning Rate comparison:**</ins> With different learning rates, a deblurring model may have significant differences in terms of output. For example, with learning rate 10<sup>-4</sup>, Model 3's output is significantly worse than that of learning rate 5 * 10<sup>-5</sup>. We can see that the former is very blurry and does not have much difference from the blurred image, while the latter achieves a significant amount of deblurring as compared to the blurred image. This once again proves that learning rate affects models' performances.
 
-<ins>**Model comparison:**</ins> Overall, the outputs of Model 1 and Model 2 are quite similar, but Model 2's results are slightly better if we look closely. However, Model 3's results are not as good as the others, especially for Gaussian Deblurring and Motion Deblurring. The outputs strengthen the claim that a model's depth is not a guarantee of better results. One more thing to notice is that, the output of Model 2 in Motion Deblurring is significantly better than the other two, as it looks much clearlt and closer to the grayscaled original image, despite not having much lower loss than the others. These outputs help us to conclude that claim (3) is also correct: A larger kernel filter size leads to better results.
+<ins>**Model comparison:**</ins> Overall, the outputs of Model 1 and Model 2 are quite similar, but Model 2's results are slightly better if we look closely. However, Model 3's results are not as good as the others, especially for Gaussian Deblurring and Motion Deblurring. The outputs strengthen the claim that a model's depth is not a guarantee of better results. One more thing to notice is that, the output of Model 2 in Motion Deblurring is significantly better than the other two, as it looks much clearer and closer to the grayscaled original image, despite not having much lower loss than the others. These outputs help us to conclude that claim (3) is also correct: A larger kernel filter size leads to better results.
 
 <ins>**Blur Filter Comparison:**</ins> Box Filter Deblurring achieves the most satisfactory outputs, with most models result in significantly deblurred and close to grayscaled original images. The outputs also seems to work well with Gaussian Deblurring although it is essential to do hyper-parameter tuning to achieve good results. However, the outputs of Motion Deblurring are not too well, as they are still very blurry. Even Model 2's results are still blurry, they are just much less compared to the other two. This suggests that our models are not the suitable ones to deblur Motion blurred images yet, and we may need to consider different approaches, such as Autoencoders, GANs and much more complex deep convolutional neural networks should we continue extending our project.
 
