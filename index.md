@@ -14,7 +14,7 @@
 </div>
 
 ## <ins><b> Abstract </b></ins>
-In this project, we explore image deblurring techniques and learning rates to unblur differently blurred animated images. To blur the images, we used three techniques: gaussian filter, box filter, and a custom made motion blurring filter. We then used three different deep convolutional neural network models with some different learning rates to train and compare the resulting images and loss. We discuss more of the takeaways of this project in this video summary here (make link).
+In this project, we explore image deblurring techniques and learning rates to unblur differently blurred animated images. To blur the images, we used three techniques: gaussian filter, box filter, and a custom made motion blurring filter. We then used three different deep convolutional neural network models with some different learning rates to train and compare the resulting images and loss. We discuss more of the takeaways of this project in this video summary [here](https://www.youtube.com/watch?v=duyMmDkvsbI).
 
 ## <ins><b> Introduction </b></ins>
 Clear images are important to capture important moments or to record information, although sometimes the images we capture or download result in being blurrier than we imagined. In low-level Computer Vision, we've learned different methods to blur a clear image, as well as different blurring filters. Moving on to higher-level Computer Vision, we were introduced with more complex techniques and models that excel in multiple tasks such as object detection, semantic segmentation, image classification,... We were particularly interested GANs (Generative Adversarial Networks) and one of its applications, which is Image Super-Resolution. 
