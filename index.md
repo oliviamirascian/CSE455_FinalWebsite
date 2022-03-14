@@ -58,7 +58,7 @@ For simplicity, we will name our models in the following way:
 </div>
 
 ## <ins><b> Model Performance </b></ins>
-The paper experiments with different hyper-parameter settings to improve performance. We decided to do similarly. The paper suggested that using a smaller learning rate in the last layer is essential for the network to converge, so we decided to use 2 different learning rates: 10<sup>-4</sup> and 5 * 10<sup>-5</sup> to compare the performances.
+The paper experiments with different hyper-parameter settings to improve performance. We decided to do similarly. The paper suggested that using a smaller learning rate in the last layer is essential for the network to converge, so we decided to use 2 different learning rates: 10<sup>-4</sup> and 5 * 10<sup>-5</sup> to compare the performances. We will train each of our model for 20 epochs.
 
 As we train our models, we will try to prove some claims that were made in the paper:
 1. A smaller learning rate in the last layer is important for the network to converge.
